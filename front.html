@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<head>
+    <title>前后端分离前</title>
+    <!-- 引入jquery -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+</head>
+
+<body>
+    服务器时间:<input type="text" value="">
+</body>
+<script type="text/javascript">
+    // 发送ajax 请求至后端
+    $.get("/api/getime.php", function(data) {
+        // 获取数据（data.data.time）并渲染至页面
+        $("input").val(data.data.time);
+        // console.log(data);
+    });
+</script>
