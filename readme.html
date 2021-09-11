@@ -172,7 +172,7 @@
 <span class="hljs-quote">&gt; 获取服务器时间</span>
 
 <span class="hljs-section">###### URL</span>
-<span class="hljs-quote">&gt; /api/getime</span>
+<span class="hljs-quote">&gt; /api/getime.php</span>
 
 <span class="hljs-section">###### 支持格式</span>
 <span class="hljs-quote">&gt; JSON</span>
@@ -192,7 +192,7 @@ null
 | data.time | string   | 服务器时间                       |
 
 <span class="hljs-section">###### 接口示例</span>
-<span class="hljs-quote">&gt; [<span class="hljs-string">210.47.163.172/send/send.php?uid=odZCmjqhCIOHH1p0&amp;jgxm=test</span>](<span class="hljs-link">http://210.47.163.172/send/send.php?udi=odZCmjqhCIOHH1p0&amp;jgxm=test</span>)</span>
+<span class="hljs-quote">&gt; [<span class="hljs-string">/api/getime.php</span>](<span class="hljs-link">/api/getime.php</span>)</span>
 <span class="hljs-code">``` javascript
 {
     &quot;err&quot;: 0,
@@ -217,7 +217,7 @@ null
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/javascript&quot;</span>&gt;</span><span class="javascript">
     <span class="hljs-comment">// 发送ajax 请求至后端</span>
-    $.get(<span class="hljs-string">&quot;/api/getime&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">data</span>) </span>{
+    $.get(<span class="hljs-string">&quot;/api/getime.php&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">data</span>) </span>{
         <span class="hljs-comment">// 获取数据（data.data.time）并渲染至页面</span>
         $(<span class="hljs-string">&quot;input&quot;</span>).val(data.data.time);
         <span class="hljs-comment">// console.log(data);</span>
